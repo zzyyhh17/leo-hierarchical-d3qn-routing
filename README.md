@@ -49,6 +49,10 @@ on a desktop CPU):
 - validation-pair SHA-256: `3374fed5f6626a28ff890e07b227abe27726404b88c48883020a4d9db289a9e0`
 - test-pair SHA-256: `b1f01df7af89bbaa7c31a39495c6e57911f129ee2a8fd50c91cc1f8bb8d4b2e4`
 
-Processed result files are included in the `results/` directory.
+Processed result files are included in `results/` (the three-seed controlled
+architecture comparison, including per-pair outcomes for all 1,000 test pairs per
+seed), and the fixed ideal-Walker topology snapshot used in the experiments is at
+`starlink/data/`. `simulation/verify_architecture_multiseed.py` re-checks the
+published numbers against these files.
 Trained model checkpoints are available from the corresponding author upon
 reasonable request, as stated in the paper.

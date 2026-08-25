@@ -1,0 +1,352 @@
+{
+  "protocol": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "episodes": 10000,
+    "expert_demos": 2000,
+    "validation_seed": 123,
+    "validation_pairs": 200,
+    "test_seed": 456,
+    "test_pairs": 1000,
+    "beam_width": 5,
+    "networks": [
+      "mlp",
+      "context_per_action"
+    ]
+  },
+  "topology": {
+    "n_sats": 1584,
+    "n_links": 3168,
+    "sha256": "bd8e048178733796fbbe8561507bdbc38d795834f60322f081c2567fe82f4676"
+  },
+  "validation_pairs_sha256": "3374fed5f6626a28ff890e07b227abe27726404b88c48883020a4d9db289a9e0",
+  "pairs_sha256": "b1f01df7af89bbaa7c31a39495c6e57911f129ee2a8fd50c91cc1f8bb8d4b2e4",
+  "run_files": [
+    "/Users/renyiguang/project/school/starlink/server/good/results_architecture_multiseed_runs/seed_42.json",
+    "/Users/renyiguang/project/school/starlink/server/good/results_architecture_multiseed_runs/seed_43.json",
+    "/Users/renyiguang/project/school/starlink/server/good/results_architecture_multiseed_runs/seed_44.json"
+  ],
+  "aggregate": {
+    "mlp": {
+      "greedy_success_pct": {
+        "values": [
+          75.1,
+          76.6,
+          72.2
+        ],
+        "mean": 74.633333,
+        "sample_std": 2.236813,
+        "min": 72.2,
+        "max": 76.6
+      },
+      "greedy_conditional_stretch": {
+        "values": [
+          1.3333,
+          1.3208,
+          1.4922
+        ],
+        "mean": 1.3821,
+        "sample_std": 0.095554,
+        "min": 1.3208,
+        "max": 1.4922
+      },
+      "beam_success_pct": {
+        "values": [
+          73.1,
+          74.2,
+          72.4
+        ],
+        "mean": 73.233333,
+        "sample_std": 0.907377,
+        "min": 72.4,
+        "max": 74.2
+      },
+      "beam_conditional_stretch": {
+        "values": [
+          1.4372,
+          1.3934,
+          1.4809
+        ],
+        "mean": 1.437167,
+        "sample_std": 0.04375,
+        "min": 1.3934,
+        "max": 1.4809
+      },
+      "greedy_beam_success_pct": {
+        "values": [
+          89.2,
+          88.1,
+          87.7
+        ],
+        "mean": 88.333333,
+        "sample_std": 0.776745,
+        "min": 87.7,
+        "max": 89.2
+      },
+      "greedy_beam_selected_stretch": {
+        "values": [
+          1.3487,
+          1.3159,
+          1.4935
+        ],
+        "mean": 1.386033,
+        "sample_std": 0.094503,
+        "min": 1.3159,
+        "max": 1.4935
+      },
+      "unresolved_after_greedy_beam": {
+        "values": [
+          108,
+          119,
+          123
+        ],
+        "mean": 116.666667,
+        "sample_std": 7.767453,
+        "min": 108,
+        "max": 123
+      },
+      "parameter_count": 213125
+    },
+    "context_per_action": {
+      "greedy_success_pct": {
+        "values": [
+          83.1,
+          82.7,
+          84.8
+        ],
+        "mean": 83.533333,
+        "sample_std": 1.115049,
+        "min": 82.7,
+        "max": 84.8
+      },
+      "greedy_conditional_stretch": {
+        "values": [
+          1.1383,
+          1.1944,
+          1.1638
+        ],
+        "mean": 1.1655,
+        "sample_std": 0.028089,
+        "min": 1.1383,
+        "max": 1.1944
+      },
+      "beam_success_pct": {
+        "values": [
+          84.1,
+          79.0,
+          78.2
+        ],
+        "mean": 80.433333,
+        "sample_std": 3.200521,
+        "min": 78.2,
+        "max": 84.1
+      },
+      "beam_conditional_stretch": {
+        "values": [
+          1.1709,
+          1.2009,
+          1.2146
+        ],
+        "mean": 1.195467,
+        "sample_std": 0.022351,
+        "min": 1.1709,
+        "max": 1.2146
+      },
+      "greedy_beam_success_pct": {
+        "values": [
+          95.4,
+          92.9,
+          95.1
+        ],
+        "mean": 94.466667,
+        "sample_std": 1.36504,
+        "min": 92.9,
+        "max": 95.4
+      },
+      "greedy_beam_selected_stretch": {
+        "values": [
+          1.1408,
+          1.2028,
+          1.1692
+        ],
+        "mean": 1.170933,
+        "sample_std": 0.031036,
+        "min": 1.1408,
+        "max": 1.2028
+      },
+      "unresolved_after_greedy_beam": {
+        "values": [
+          46,
+          71,
+          49
+        ],
+        "mean": 55.333333,
+        "sample_std": 13.650397,
+        "min": 46,
+        "max": 71
+      },
+      "parameter_count": 51650
+    }
+  },
+  "paired_comparison": {
+    "per_seed": [
+      {
+        "seed": 42,
+        "run_file": "/Users/renyiguang/project/school/starlink/server/good/results_architecture_multiseed_runs/seed_42.json",
+        "context_minus_mlp": {
+          "greedy_success_pct": 8.0,
+          "greedy_conditional_stretch": -0.195,
+          "beam_success_pct": 11.0,
+          "beam_conditional_stretch": -0.2663,
+          "greedy_beam_success_pct": 6.2,
+          "greedy_beam_selected_stretch": -0.2079,
+          "unresolved_after_greedy_beam": -62
+        },
+        "mcnemar": {
+          "greedy": {
+            "context_success_mlp_failure": 159,
+            "mlp_success_context_failure": 79,
+            "exact_two_sided_p": 2.3668561590006244e-07
+          },
+          "greedy_beam": {
+            "context_success_mlp_failure": 94,
+            "mlp_success_context_failure": 32,
+            "exact_two_sided_p": 2.910193273546554e-08
+          }
+        }
+      },
+      {
+        "seed": 43,
+        "run_file": "/Users/renyiguang/project/school/starlink/server/good/results_architecture_multiseed_runs/seed_43.json",
+        "context_minus_mlp": {
+          "greedy_success_pct": 6.1,
+          "greedy_conditional_stretch": -0.1264,
+          "beam_success_pct": 4.8,
+          "beam_conditional_stretch": -0.1925,
+          "greedy_beam_success_pct": 4.8,
+          "greedy_beam_selected_stretch": -0.1131,
+          "unresolved_after_greedy_beam": -48
+        },
+        "mcnemar": {
+          "greedy": {
+            "context_success_mlp_failure": 137,
+            "mlp_success_context_failure": 76,
+            "exact_two_sided_p": 3.511534442326476e-05
+          },
+          "greedy_beam": {
+            "context_success_mlp_failure": 84,
+            "mlp_success_context_failure": 36,
+            "exact_two_sided_p": 1.3897012121027624e-05
+          }
+        }
+      },
+      {
+        "seed": 44,
+        "run_file": "/Users/renyiguang/project/school/starlink/server/good/results_architecture_multiseed_runs/seed_44.json",
+        "context_minus_mlp": {
+          "greedy_success_pct": 12.6,
+          "greedy_conditional_stretch": -0.3284,
+          "beam_success_pct": 5.8,
+          "beam_conditional_stretch": -0.2663,
+          "greedy_beam_success_pct": 7.4,
+          "greedy_beam_selected_stretch": -0.3243,
+          "unresolved_after_greedy_beam": -74
+        },
+        "mcnemar": {
+          "greedy": {
+            "context_success_mlp_failure": 211,
+            "mlp_success_context_failure": 85,
+            "exact_two_sided_p": 1.5958761137173263e-13
+          },
+          "greedy_beam": {
+            "context_success_mlp_failure": 109,
+            "mlp_success_context_failure": 35,
+            "exact_two_sided_p": 4.855921972764478e-10
+          }
+        }
+      }
+    ],
+    "context_minus_mlp_summary": {
+      "greedy_success_pct": {
+        "values": [
+          8.0,
+          6.1,
+          12.6
+        ],
+        "mean": 8.9,
+        "sample_std": 3.342155,
+        "min": 6.1,
+        "max": 12.6
+      },
+      "greedy_conditional_stretch": {
+        "values": [
+          -0.195,
+          -0.1264,
+          -0.3284
+        ],
+        "mean": -0.2166,
+        "sample_std": 0.102718,
+        "min": -0.3284,
+        "max": -0.1264
+      },
+      "beam_success_pct": {
+        "values": [
+          11.0,
+          4.8,
+          5.8
+        ],
+        "mean": 7.2,
+        "sample_std": 3.328663,
+        "min": 4.8,
+        "max": 11.0
+      },
+      "beam_conditional_stretch": {
+        "values": [
+          -0.2663,
+          -0.1925,
+          -0.2663
+        ],
+        "mean": -0.2417,
+        "sample_std": 0.042608,
+        "min": -0.2663,
+        "max": -0.1925
+      },
+      "greedy_beam_success_pct": {
+        "values": [
+          6.2,
+          4.8,
+          7.4
+        ],
+        "mean": 6.133333,
+        "sample_std": 1.301281,
+        "min": 4.8,
+        "max": 7.4
+      },
+      "greedy_beam_selected_stretch": {
+        "values": [
+          -0.2079,
+          -0.1131,
+          -0.3243
+        ],
+        "mean": -0.2151,
+        "sample_std": 0.105784,
+        "min": -0.3243,
+        "max": -0.1131
+      },
+      "unresolved_after_greedy_beam": {
+        "values": [
+          -62,
+          -48,
+          -74
+        ],
+        "mean": -61.333333,
+        "sample_std": 13.012814,
+        "min": -74,
+        "max": -48
+      }
+    }
+  }
+}

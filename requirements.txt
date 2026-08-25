@@ -1,0 +1,5 @@
+numpy>=1.21
+matplotlib>=3.4
+networkx>=2.6
+sgp4>=2.20
+torch>=1.9

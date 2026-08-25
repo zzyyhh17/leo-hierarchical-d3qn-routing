@@ -550,6 +550,3 @@ if __name__ == "__main__":
     eval_pipeline(agent, env)
 
     test_full_route(sats, agent, env, n_tests=20)
-
-
-
