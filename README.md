@@ -38,7 +38,17 @@ Key entry points:
 
 Python 3, PyTorch, NumPy, Matplotlib (see imports in each module).
 
-## Data availability note
+## Reproducibility
 
-Trained model checkpoints and processed result files are available from the
-corresponding author upon reasonable request, as stated in the paper.
+All results in the paper can be independently reproduced by retraining with the
+published code, configurations, and seeds (approximately 4 minutes per training run
+on a desktop CPU):
+
+- training seeds: 42, 43, 44; validation seed: 123; test seed: 456
+- topology SHA-256: `bd8e048178733796fbbe8561507bdbc38d795834f60322f081c2567fe82f4676`
+- validation-pair SHA-256: `3374fed5f6626a28ff890e07b227abe27726404b88c48883020a4d9db289a9e0`
+- test-pair SHA-256: `b1f01df7af89bbaa7c31a39495c6e57911f129ee2a8fd50c91cc1f8bb8d4b2e4`
+
+Processed result files are included in the `results/` directory.
+Trained model checkpoints are available from the corresponding author upon
+reasonable request, as stated in the paper.
