@@ -173,7 +173,7 @@ def main() -> None:
         raise RuntimeError("LA-Dijkstra metrics do not match the canonical result")
 
     norm = Normalize(vmin=0.0, vmax=3.0, clip=True)
-    fig, axes = plt.subplots(1, 2, figsize=(11.2, 4.2), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(11.2, 5.2), sharey=True)
     collection = _draw(
         axes[0], satellites, edges, _edge_load(sp_paths), cap,
         "(a) SP-hop (load-blind)", sp_metric, norm,
@@ -188,7 +188,7 @@ def main() -> None:
         collection,
         ax=axes,
         orientation="horizontal",
-        fraction=0.065,
+        fraction=0.05,
         pad=0.17,
         aspect=45,
         ticks=[0, 0.5, 1, 2, 3],
@@ -199,7 +199,7 @@ def main() -> None:
         fontsize=10,
     )
     colorbar.ax.tick_params(labelsize=9)
-    fig.subplots_adjust(left=0.055, right=0.99, top=0.84, bottom=0.25, wspace=0.08)
+    fig.subplots_adjust(left=0.055, right=0.99, top=0.83, bottom=0.30, wspace=0.08)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(args.out, bbox_inches="tight")
     plt.close(fig)
