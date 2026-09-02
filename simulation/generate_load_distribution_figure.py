@@ -107,7 +107,7 @@ def _draw(ax, satellites: list, edges: set, load: dict, cap: int,
         f"{title}\n"
         f"peak $\\rho={metric['max_util']:.2f}$, "
         f"packet loss={loss_pct}\\%, "
-        f"delivered={metric['goodput']:,}/2,000",
+        f"delivered={metric['goodput']}/2000",
         fontsize=11.5,
         pad=7,
     )
